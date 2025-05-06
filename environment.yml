@@ -1,0 +1,19 @@
+name: pinn
+channels:
+  - pytorch        # official PyTorch channel (CUDA & CPU builds)
+  - conda-forge    # wide scientific-python ecosystem
+  - defaults
+dependencies:
+  # core runtime
+  - python=3.10
+  - jupyterlab      # notebook interface
+  - numpy
+  - matplotlib
+  - pillow          # used for GIF / image export in the notebook
+  # deep-learning stack
+  - pytorch
+  - torchvision
+  - torchaudio
+  # (optional) Jupyter niceties
+  - ipywidgets
+  - pip             # keep pip available for any extras
